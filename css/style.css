@@ -1,0 +1,506 @@
+body{
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+/*NAVBAR*/
+
+
+.header{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1.3rem 10%;
+	background: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.navbar{
+	padding-right: 17%;
+}
+
+.navbar a{
+	font-size: 1.15rem;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	padding-left: 20px;
+}
+
+#check{
+	display: none;
+}
+
+.icons{
+	position: absolute;
+	right: 11%;
+	font-size: 2.8rem;
+	color: #01000F;
+	cursor: pointer;
+	display: none;
+}
+
+
+@media (max-width: 992px) {
+	.header{
+		padding: 3.3rem 5%;
+	}
+}
+
+@media (max-width: 768px) {
+	.icons{
+		display: block;
+	}
+
+	#check:checked~.icons #menu-icon{
+		display: none;
+	}
+
+	.icons #close-icon{
+		display: none;
+	}
+
+	#check:checked~.icons #close-icon{
+		display: block;
+	}
+
+	.navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 30%;
+		height: 0;
+		background: #FFFFFF;
+		overflow: hidden;
+		transition: .7s ease;
+		margin: auto 50%;
+	}
+
+	#check:checked~.navbar{
+		position: absolute;
+		width: 50%;
+		height: 20rem;
+		display: block;
+	}
+
+	.navbar a{
+		display: block;
+		font-size: 1.1rem;
+		margin: 2.5rem 0;
+		text-align: center;
+		transform: translateY(-10px);
+		transition: .3s ease;
+		color: #01000F;
+	}
+}
+
+/*END*/
+
+
+/*HERO_SECTION-MOB-SIZE*/
+
+#Hero_Section-mob-size{
+	text-align: center;
+	padding-top: 30px;
+}
+
+#Hero_Section-mob-size h3{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: bold;
+	font-size: 35px;
+	margin-bottom: 25px;
+}
+
+#Hero_Section-mob-size p{
+	font-family: 'Mulish', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+
+#Hero_Section-mob-size a{
+	text-decoration: none;
+	color: #FCAE31;
+	font-family: 'Mulish', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+#Hero_Section-mob-size .ready_anchor{
+	margin: 30px auto;
+}
+
+/*HERO-BTN*/
+
+#hero-btn{
+	margin-bottom: 50px;
+}
+
+
+.hero-explore-btn button{
+	width: 50%;
+	height: 50px;
+	background: #01000F;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-bottom: 25px;
+}
+
+#hero-btn .hero-explore-btn button a{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.hero-contact-btn button{
+	width: 50%;
+	height: 50px;
+	background: transparent;
+	border: 2px solid #01000F;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+#hero-btn .hero-contact-btn button a{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	color: #01000F;
+	cursor: pointer;
+}
+
+
+/*ELLIPSES*/
+
+.ellipse1{
+	position: absolute;
+	top: -5%;
+	right: -0%;
+	opacity: 0.4;
+}
+
+.ellipse2{
+	position: absolute;
+	bottom: 30%;
+	left: -35%;
+	opacity: 0.4;
+}
+
+/*END*/
+
+/*WHO-WE-ARE-GROUP-MOB-SIZE*/
+
+#Who-we-are-group-mob-size{
+	background-color: #01000F;
+	text-align: center;
+}
+
+#Who-we-are-group-mob-size h3{
+	color: #FCAE31;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	padding-top: 35px;
+	padding-bottom: 15px;
+}
+
+#Who-we-are-group-mob-size p{
+	color: #E5E5E5;
+}
+
+#Who-we-are-group-mob-size button{
+	margin: 50px auto;
+	background-color: transparent;
+	width: 150px;
+	height: 50px;
+	border: 2px solid #FCAE31;
+	border-radius: 50px;
+	margin: 70px auto;
+}
+
+#Who-we-are-group-mob-size button a{
+	text-decoration: none;
+	color: #E5E5E5;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+/*END*/
+
+/*WORK-SECTION-MOB-SIZE*/
+
+#mob_size{
+	display: flex;
+}
+
+#mob_size img{
+	width: 100%;
+	position: relative;
+ 	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.work-description-text_and-button{
+	font-family: 'Mulish', sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	color: #ffffff;
+	position: absolute;
+	margin-left: 10%;
+	margin-top: 70%;
+}
+
+.work-description-text_and-button p span::after{
+	content: " ";
+	position: absolute;
+	bottom: 82%;
+	height: 1%;
+	width: 6em;
+	left: 0px;
+	background-color: #ffffff;
+}
+
+.work-description-text_and-button .button-division button{
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	background-color: transparent;
+	color: #ffffff;
+}
+
+.work-description-text_and-button .button-division button{
+	border: 2px solid #ffffff;
+	border-radius: 50px;
+	background-color: transparent;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 5px 5px;
+}
+
+.work-description-text_and-button .button-division{
+	display: inline-flex;
+}
+
+/*NEXT AND PREFIOUS BUTTON*/
+.BTN_container{
+	display: flex;
+	flex-direction: row;
+	margin-left: 25px;
+	margin-top: -7px;
+}
+.arr{
+	background: transparent;
+	border: 2px solid #ffffff;
+	height: 40px;
+	width: 40px; 
+	border-radius: 50%;
+	margin: 10px;
+	transition: 0.4s ease;
+}
+.arr:hover{
+	box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+.arr div{
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	border-top: 2px solid #ffffff;
+	border-left: 2px solid #ffffff;
+	transform: rotate(45deg);
+	left: 8px;
+	top: 12px;
+}
+.right{
+	transform: rotate(90deg);
+}
+.left{
+	transform: rotate(-90deg);
+}
+/*END*/
+
+
+/*CONTACT-SECTION*/
+
+#Contact-section{
+	text-align: center;
+	margin-top: 25px;
+}
+
+#Contact-section h3{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 48px;
+	font-style: italic;
+	margin: 50px auto 20px auto;
+}
+
+#Contact-section p{
+	font-family: 'Mulish', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+#Contact-section input{
+	background-color: transparent;
+	width: 90%;
+	font-size: 25px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-color: black;
+	margin-top: 45px;
+	padding-bottom: 50px;
+
+}
+
+#Contact-section textarea{
+	background-color: transparent;
+	width: 90%;
+	font-size: 25px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-color: black;
+	margin-bottom: 15px;
+	margin-top: 45px;
+}
+
+#Contact-section input, textarea:focus-within{
+	outline: none;
+	border-color: black;
+	border-width: 1px;
+}
+
+#Contact-section .number_gmail button{
+	background-color: #01000F;
+	border: none;
+	border-radius: 50px;
+	margin: 25px auto;
+	padding: 7px 25px;
+}
+
+#Contact-section .number_gmail button a{
+	text-decoration: none;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#Contact-section .number_gmail p{
+	font-family: 'Mulish', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+#Contact-section hr{
+	width: 35%;
+	margin: auto auto;
+	border-width: 2px;
+	border-color: black;
+	margin-top: 75px;
+	margin-bottom: 30px;
+}
+
+/*END*/
+
+
+/*FOOTER-SECTION*/
+
+#footer .footer_logo_text_edit{
+	text-align: center;
+}
+
+#footer .footer_logo_text_edit img{
+	margin-bottom: 10px;
+}
+
+#footer .footer_logo_text_edit p{
+	font-family: 'Mulish', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+/*FOOTER NAV*/
+
+.footer-col_1{
+	float: left;
+	text-align: left;
+}
+
+.footer-col_1 li, .footer-col_1 a{
+	list-style: none;
+	text-decoration: none;
+	padding-bottom: 20px;
+	font-family: 'Mulish', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: black;
+}
+
+.footer-col_2{
+	text-align: right;
+	float: right;
+}
+
+.footer-col_2 li, .footer-col_2 a{
+	list-style: none;
+	text-decoration: none;
+	padding-bottom: 20px;
+	font-family: 'Mulish', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: black;
+}
+
+.footer-col_1 h4, .footer-col_2 h4{
+	margin-bottom: 30px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.footer-col_1 a:hover{
+	padding-left: 3px;
+}
+
+.footer-col_2 a:hover{
+	padding-right: 3px;
+}
+
+.footer-col_1 .a{
+	text-decoration: underline;
+	color: black;
+}
+
+/*FOOTER-COL_ICON*/
+
+.footer-col_icon{
+	margin: 85% 0px 15% 10px ;
+}
+
+.footer-col_icon a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: black;
+	margin: 0px 10px 10px 0px ;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	font-size: 25px;
+}
+
+.contact_text{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	margin-left: 10px;
+}
